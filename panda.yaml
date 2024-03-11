@@ -1,6 +1,6 @@
 port: 7890
 allow-lan: true
-bind-address: "*"
+bind-address: '*'
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
@@ -29,78 +29,78 @@ dns:
 proxies:
   - name: Panda-HK-01
     type: ss
-    server: c92s1.jjcruises.com
-    port: 11621
+    server: c33s1.jjcruises.com
+    port: 7653
     cipher: aes-256-gcm
-    password: M3UHLJDFA6ncHoqe
+    password: JsYXUCZqYeW6g44j
   - name: Panda-HK-02
     type: ss
-    server: c92s2.jjcruises.com
-    port: 11621
+    server: c33s2.jjcruises.com
+    port: 7653
     cipher: aes-256-gcm
-    password: M3UHLJDFA6ncHoqe
+    password: JsYXUCZqYeW6g44j
   - name: Panda-HK-03
     type: vmess
-    server: c92s3.jjcruises.com
-    port: 11621
-    uuid: f971544f-66fc-42d0-8212-cd8ec7d303c8
+    server: c33s3.jjcruises.com
+    port: 7653
+    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-HK-04
     type: vmess
-    server: c92s4.jjcruises.com
-    port: 11621
-    uuid: f971544f-66fc-42d0-8212-cd8ec7d303c8
+    server: c33s4.jjcruises.com
+    port: 7653
+    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-HK-05
     type: vmess
-    server: c92s5.jjcruises.com
-    port: 11621
-    uuid: f971544f-66fc-42d0-8212-cd8ec7d303c8
+    server: c33s5.jjcruises.com
+    port: 7653
+    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-US-01
     type: ss
-    server: c92s1.jjcruises.com
-    port: 11621
+    server: c33s1.jjcruises.com
+    port: 7653
     cipher: aes-256-gcm
-    password: M3UHLJDFA6ncHoqe
+    password: JsYXUCZqYeW6g44j
   - name: Panda-US-02
     type: ss
-    server: c92s2.jjcruises.com
-    port: 11621
+    server: c33s2.jjcruises.com
+    port: 7653
     cipher: aes-256-gcm
-    password: M3UHLJDFA6ncHoqe
+    password: JsYXUCZqYeW6g44j
   - name: Panda-US-03
     type: vmess
-    server: c92s3.jjcruises.com
-    port: 11621
-    uuid: f971544f-66fc-42d0-8212-cd8ec7d303c8
+    server: c33s3.jjcruises.com
+    port: 7653
+    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-JP-01
     type: vmess
-    server: c92s4.jjcruises.com
-    port: 11621
-    uuid: f971544f-66fc-42d0-8212-cd8ec7d303c8
+    server: c33s4.jjcruises.com
+    port: 7653
+    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-NL-01
     type: vmess
-    server: c92s5.jjcruises.com
-    port: 11621
-    uuid: f971544f-66fc-42d0-8212-cd8ec7d303c8
+    server: c33s5.jjcruises.com
+    port: 7653
+    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
