@@ -29,78 +29,78 @@ dns:
 proxies:
   - name: Panda-HK-01
     type: ss
-    server: c33s1.jjcruises.com
-    port: 7653
+    server: c75s1.jjcruises.com
+    port: 19801
     cipher: aes-256-gcm
-    password: JsYXUCZqYeW6g44j
+    password: Jpdb3QrYws3t4ZFV
   - name: Panda-HK-02
     type: ss
-    server: c33s2.jjcruises.com
-    port: 7653
+    server: c75s2.jjcruises.com
+    port: 19801
     cipher: aes-256-gcm
-    password: JsYXUCZqYeW6g44j
+    password: Jpdb3QrYws3t4ZFV
   - name: Panda-HK-03
     type: vmess
-    server: c33s3.jjcruises.com
-    port: 7653
-    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
+    server: c75s3.jjcruises.com
+    port: 19801
+    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-HK-04
     type: vmess
-    server: c33s4.jjcruises.com
-    port: 7653
-    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
+    server: c75s4.jjcruises.com
+    port: 19801
+    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-HK-05
     type: vmess
-    server: c33s5.jjcruises.com
-    port: 7653
-    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
+    server: c75s5.jjcruises.com
+    port: 19801
+    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-US-01
     type: ss
-    server: c33s1.jjcruises.com
-    port: 7653
+    server: c75s1.jjcruises.com
+    port: 19801
     cipher: aes-256-gcm
-    password: JsYXUCZqYeW6g44j
+    password: Jpdb3QrYws3t4ZFV
   - name: Panda-US-02
     type: ss
-    server: c33s2.jjcruises.com
-    port: 7653
+    server: c75s2.jjcruises.com
+    port: 19801
     cipher: aes-256-gcm
-    password: JsYXUCZqYeW6g44j
+    password: Jpdb3QrYws3t4ZFV
   - name: Panda-US-03
     type: vmess
-    server: c33s3.jjcruises.com
-    port: 7653
-    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
+    server: c75s3.jjcruises.com
+    port: 19801
+    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-JP-01
     type: vmess
-    server: c33s4.jjcruises.com
-    port: 7653
-    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
+    server: c75s4.jjcruises.com
+    port: 19801
+    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-NL-01
     type: vmess
-    server: c33s5.jjcruises.com
-    port: 7653
-    uuid: 7916b9d7-356c-4151-8259-77a156fa2abe
+    server: c75s5.jjcruises.com
+    port: 19801
+    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
