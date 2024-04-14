@@ -29,78 +29,78 @@ dns:
 proxies:
   - name: Panda-HK-01
     type: ss
-    server: c75s1.jjcruises.com
-    port: 19801
+    server: c90s1.portablesubmarines.com
+    port: 6793
     cipher: aes-256-gcm
-    password: Jpdb3QrYws3t4ZFV
+    password: 647TkjexuHNUMtV5
   - name: Panda-HK-02
     type: ss
-    server: c75s2.jjcruises.com
-    port: 19801
+    server: c90s2.portablesubmarines.com
+    port: 6793
     cipher: aes-256-gcm
-    password: Jpdb3QrYws3t4ZFV
+    password: 647TkjexuHNUMtV5
   - name: Panda-HK-03
     type: vmess
-    server: c75s3.jjcruises.com
-    port: 19801
-    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
+    server: c90s3.portablesubmarines.com
+    port: 6793
+    uuid: 37ecaa43-63d0-4379-89b7-e1da6cb1dbe4
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-HK-04
     type: vmess
-    server: c75s4.jjcruises.com
-    port: 19801
-    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
+    server: c90s4.portablesubmarines.com
+    port: 6793
+    uuid: 37ecaa43-63d0-4379-89b7-e1da6cb1dbe4
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-HK-05
     type: vmess
-    server: c75s5.jjcruises.com
-    port: 19801
-    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
+    server: c90s5.portablesubmarines.com
+    port: 6793
+    uuid: 37ecaa43-63d0-4379-89b7-e1da6cb1dbe4
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-US-01
     type: ss
-    server: c75s1.jjcruises.com
-    port: 19801
+    server: c67s1.portablesubmarines.com
+    port: 16703
     cipher: aes-256-gcm
-    password: Jpdb3QrYws3t4ZFV
+    password: jFPs5HrJTPQRz3bf
   - name: Panda-US-02
     type: ss
-    server: c75s2.jjcruises.com
-    port: 19801
+    server: c67s2.portablesubmarines.com
+    port: 16703
     cipher: aes-256-gcm
-    password: Jpdb3QrYws3t4ZFV
+    password: jFPs5HrJTPQRz3bf
   - name: Panda-US-03
     type: vmess
-    server: c75s3.jjcruises.com
-    port: 19801
-    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
+    server: c67s3.portablesubmarines.com
+    port: 16703
+    uuid: 1f92a7d6-36c5-4831-8359-e1dcb92e24ce
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-JP-01
     type: vmess
-    server: c75s4.jjcruises.com
-    port: 19801
-    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
+    server: c67s4.portablesubmarines.com
+    port: 16703
+    uuid: 1f92a7d6-36c5-4831-8359-e1dcb92e24ce
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-NL-01
     type: vmess
-    server: c75s5.jjcruises.com
-    port: 19801
-    uuid: 34dc96b4-8c78-4764-8253-29a5848ef372
+    server: c67s5.portablesubmarines.com
+    port: 16703
+    uuid: 1f92a7d6-36c5-4831-8359-e1dcb92e24ce
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
