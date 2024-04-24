@@ -32,18 +32,18 @@ proxies:
     server: c90s1.portablesubmarines.com
     port: 6793
     cipher: aes-256-gcm
-    password: 647TkjexuHNUMtV5
+    password: Jsr5sgRxJyYGYppz
   - name: Panda-HK-02
     type: ss
     server: c90s2.portablesubmarines.com
     port: 6793
     cipher: aes-256-gcm
-    password: 647TkjexuHNUMtV5
+    password: Jsr5sgRxJyYGYppz
   - name: Panda-HK-03
     type: vmess
     server: c90s3.portablesubmarines.com
     port: 6793
-    uuid: 37ecaa43-63d0-4379-89b7-e1da6cb1dbe4
+    uuid: 68fa5c7f-bf41-4bc6-8968-a1c4a8e4968a
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
@@ -52,7 +52,7 @@ proxies:
     type: vmess
     server: c90s4.portablesubmarines.com
     port: 6793
-    uuid: 37ecaa43-63d0-4379-89b7-e1da6cb1dbe4
+    uuid: 68fa5c7f-bf41-4bc6-8968-a1c4a8e4968a
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
@@ -61,7 +61,7 @@ proxies:
     type: vmess
     server: c90s5.portablesubmarines.com
     port: 6793
-    uuid: 37ecaa43-63d0-4379-89b7-e1da6cb1dbe4
+    uuid: 68fa5c7f-bf41-4bc6-8968-a1c4a8e4968a
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
