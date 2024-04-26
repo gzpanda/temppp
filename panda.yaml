@@ -68,39 +68,39 @@ proxies:
     skip-cert-verify: true
   - name: Panda-US-01
     type: ss
-    server: c67s1.portablesubmarines.com
-    port: 16703
+    server: c90s1.portablesubmarines.com
+    port: 6793
     cipher: aes-256-gcm
-    password: jFPs5HrJTPQRz3bf
+    password: Jsr5sgRxJyYGYppz
   - name: Panda-US-02
     type: ss
-    server: c67s2.portablesubmarines.com
-    port: 16703
+    server: c90s2.portablesubmarines.com
+    port: 6793
     cipher: aes-256-gcm
-    password: jFPs5HrJTPQRz3bf
+    password: Jsr5sgRxJyYGYppz
   - name: Panda-US-03
     type: vmess
-    server: c67s3.portablesubmarines.com
-    port: 16703
-    uuid: 1f92a7d6-36c5-4831-8359-e1dcb92e24ce
+    server: c90s3.portablesubmarines.com
+    port: 6793
+    uuid: 68fa5c7f-bf41-4bc6-8968-a1c4a8e4968a
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-JP-01
     type: vmess
-    server: c67s4.portablesubmarines.com
-    port: 16703
-    uuid: 1f92a7d6-36c5-4831-8359-e1dcb92e24ce
+    server: c90s4.portablesubmarines.com
+    port: 6793
+    uuid: 68fa5c7f-bf41-4bc6-8968-a1c4a8e4968a
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-NL-01
     type: vmess
-    server: c67s5.portablesubmarines.com
-    port: 16703
-    uuid: 1f92a7d6-36c5-4831-8359-e1dcb92e24ce
+    server: c90s5.portablesubmarines.com
+    port: 6793
+    uuid: 68fa5c7f-bf41-4bc6-8968-a1c4a8e4968a
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
