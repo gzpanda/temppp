@@ -29,69 +29,69 @@ dns:
 proxies:
   - name: Panda-HK-01
     type: ss
-    server: c26s1.portablesubmarines.com
-    port: 18203
-    cipher: aes-256-gcm
-    password: JDDuAdyEx23PMHS3
-  - name: Panda-HK-02
-    type: ss
     server: c25s1.portablesubmarines.com
     port: 9621
     cipher: aes-256-gcm
-    password: zoUs2EJ8HpxMQwLe
+    password: DxkhzMDKQGtFkgWS
+  - name: Panda-HK-02
+    type: ss
+    server: c25s2.portablesubmarines.com
+    port: 9621
+    cipher: aes-256-gcm
+    password: DxkhzMDKQGtFkgWS
   - name: Panda-HK-03
     type: vmess
-    server: c26s3.portablesubmarines.com
-    port: 18203
-    uuid: d2674a8f-6d4e-4a35-8bd5-14be5c5aaa61
+    server: c25s3.portablesubmarines.com
+    port: 9621
+    uuid: 5be695f0-649f-4376-8f27-e40cba2088e9
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-HK-04
     type: vmess
-    server: c25s3.portablesubmarines.com
+    server: c25s4.portablesubmarines.com
     port: 9621
-    uuid: 2d759126-aef4-4c4e-8a51-a77207503b76
+    uuid: 5be695f0-649f-4376-8f27-e40cba2088e9
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-HK-05
     type: vmess
-    server: c26s5.portablesubmarines.com
-    port: 18203
-    uuid: d2674a8f-6d4e-4a35-8bd5-14be5c5aaa61
+    server: c25s5.portablesubmarines.com
+    port: 9621
+    uuid: 5be695f0-649f-4376-8f27-e40cba2088e9
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-US-01
     type: ss
+    server: c25s1.portablesubmarines.com
+    port: 9621
+    cipher: aes-256-gcm
+    password: DxkhzMDKQGtFkgWS
+  - name: Panda-US-02
+    type: ss
     server: c25s2.portablesubmarines.com
     port: 9621
     cipher: aes-256-gcm
-    password: zoUs2EJ8HpxMQwLe
-  - name: Panda-US-02
-    type: ss
-    server: c26s2.portablesubmarines.com
-    port: 18203
-    cipher: aes-256-gcm
-    password: JDDuAdyEx23PMHS3
+    password: DxkhzMDKQGtFkgWS
   - name: Panda-US-03
     type: vmess
-    server: c25s4.portablesubmarines.com
+    server: c25s3.portablesubmarines.com
     port: 9621
-    uuid: 2d759126-aef4-4c4e-8a51-a77207503b76
+    uuid: 5be695f0-649f-4376-8f27-e40cba2088e9
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-JP-01
     type: vmess
-    server: c26s4.portablesubmarines.com
-    port: 18203
-    uuid: d2674a8f-6d4e-4a35-8bd5-14be5c5aaa61
+    server: c25s4.portablesubmarines.com
+    port: 9621
+    uuid: 5be695f0-649f-4376-8f27-e40cba2088e9
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
@@ -100,7 +100,7 @@ proxies:
     type: vmess
     server: c25s5.portablesubmarines.com
     port: 9621
-    uuid: 2d759126-aef4-4c4e-8a51-a77207503b76
+    uuid: 5be695f0-649f-4376-8f27-e40cba2088e9
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
