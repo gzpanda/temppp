@@ -29,10 +29,10 @@ dns:
 proxies:
   - name: Panda-HK-01
     type: ss
-    server: c81s1.portablesubmarines.com
-    port: 6258
+    server: c55s1.portablesubmarines.com
+    port: 17666
     cipher: aes-256-gcm
-    password: AWqX9Zv9vyW4Sv7f
+    password: 68wRV7fxjeoQdAfm
   - name: Panda-HK-02
     type: ss
     server: c81s2.portablesubmarines.com
@@ -41,9 +41,9 @@ proxies:
     password: AWqX9Zv9vyW4Sv7f
   - name: Panda-HK-03
     type: vmess
-    server: c81s3.portablesubmarines.com
-    port: 6258
-    uuid: 863aaceb-ca31-4545-8e22-593c5351a151
+    server: c55s3.portablesubmarines.com
+    port: 17666
+    uuid: abf2fd15-810e-48e5-8575-304b7fab43ad
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
@@ -74,10 +74,10 @@ proxies:
     password: AWqX9Zv9vyW4Sv7f
   - name: Panda-US-02
     type: ss
-    server: c81s2.portablesubmarines.com
-    port: 6258
+    server: c55s2.portablesubmarines.com
+    port: 17666
     cipher: aes-256-gcm
-    password: AWqX9Zv9vyW4Sv7f
+    password: 68wRV7fxjeoQdAfm
   - name: Panda-US-03
     type: vmess
     server: c81s3.portablesubmarines.com
@@ -89,18 +89,18 @@ proxies:
     skip-cert-verify: true
   - name: Panda-JP-01
     type: vmess
-    server: c81s4.portablesubmarines.com
-    port: 6258
-    uuid: 863aaceb-ca31-4545-8e22-593c5351a151
+    server: c55s4.portablesubmarines.com
+    port: 17666
+    uuid: abf2fd15-810e-48e5-8575-304b7fab43ad
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
     skip-cert-verify: true
   - name: Panda-NL-01
     type: vmess
-    server: c81s5.portablesubmarines.com
-    port: 6258
-    uuid: 863aaceb-ca31-4545-8e22-593c5351a151
+    server: c55s5.portablesubmarines.com
+    port: 17666
+    uuid: abf2fd15-810e-48e5-8575-304b7fab43ad
     alterId: 0
     cipher: chacha20-poly1305
     tls: false
