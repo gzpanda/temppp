@@ -1,104 +1,88 @@
 port: 7890
-allow-lan: true
 bind-address: "*"
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 dns:
-  enable: false
-  ipv6: false
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
+  enable: false # set true to enable dns (default is false)
+  listen: 127.0.0.1:7053
   nameserver:
+    - 119.29.29.29
+    - 114.114.114.114
+  fallback: # concurrent request with nameserver, fallback used when GEOIP country isn't CN
+    - https://1.1.1.1/dns-query
+    - tls://1.0.0.1:853
     - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback:
-    - https://doh.dns.sb/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
-    - tls://8.8.4.4:853
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+    - tls://8.8.4.4
+  direct-nameserver:
+    - system
 proxies:
   - name: Panda-HK-01
     type: ss
-    server: c21s1.portablesubmarines.com
-    port: 10725
-    cipher: aes-256-gcm
-    password: jhJXmM2JkLZ2fTpk
+    server: h1.surgeway.xyz
+    port: 1234
+    udp: false
+    cipher: chacha20-ietf-poly1305
+    password: "vSCcTRqcVNru2aYR9HsWe_BhAU3aVBqU"
   - name: Panda-HK-02
     type: ss
-    server: c21s2.portablesubmarines.com
-    port: 10725
-    cipher: aes-256-gcm
-    password: jhJXmM2JkLZ2fTpk
+    server: x912z14g.j1.surgeway.xyz
+    port: 1234
+    cipher: chacha20-ietf-poly1305
+    password: "53JGKjzUA6DZ47Pdffu1Nm6HT5vKy_FS"
   - name: Panda-HK-03
-    type: vmess
-    server: c21s3.portablesubmarines.com
-    port: 10725
-    uuid: c69c7794-3b79-445f-9beb-e764031fb166
-    alterId: 0
-    cipher: chacha20-poly1305
-    tls: false
-    skip-cert-verify: true
+    type: ss
+    server: x912z14g.h1.surgeway.xyz
+    port: 1234
+    cipher: chacha20-ietf-poly1305
+    password: 2caNF8wMK4Ya7_thWbYPgnNcnqfCNH6o
   - name: Panda-HK-04
-    type: vmess
-    server: c21s4.portablesubmarines.com
-    port: 10725
-    uuid: c69c7794-3b79-445f-9beb-e764031fb166
-    alterId: 0
-    cipher: chacha20-poly1305
-    tls: false
-    skip-cert-verify: true
+    type: ss
+    server: x912z14g.j1.surgeway.xyz
+    port: 1234
+    cipher: chacha20-ietf-poly1305
+    password: 2caNF8wMK4Ya7_thWbYPgnNcnqfCNH6o
   - name: Panda-HK-05
-    type: vmess
-    server: c21s5.portablesubmarines.com
-    port: 10725
-    uuid: c69c7794-3b79-445f-9beb-e764031fb166
-    alterId: 0
-    cipher: chacha20-poly1305
-    tls: false
-    skip-cert-verify: true
+    type: ss
+    server: x912z14g.h1.surgeway.xyz
+    port: 1234
+    cipher: chacha20-ietf-poly1305
+    password: 4nBAP-H3sFFBfCAE08W_wkLR0TA0kDDb
   - name: Panda-US-01
     type: ss
-    server: c21s1.portablesubmarines.com
-    port: 10725
-    cipher: aes-256-gcm
-    password: jhJXmM2JkLZ2fTpk
+    server: x912z14g.j1.surgeway.xyz
+    port: 1234
+    cipher: chacha20-ietf-poly1305
+    password: 4nBAP-H3sFFBfCAE08W_wkLR0TA0kDDb
   - name: Panda-US-02
     type: ss
-    server: c21s2.portablesubmarines.com
-    port: 10725
-    cipher: aes-256-gcm
-    password: jhJXmM2JkLZ2fTpk
+    server: x912z14g.h1.surgeway.xyz
+    port: 1234
+    cipher: chacha20-ietf-poly1305
+    password: 84hn-BGnDZrHccZm0ud-BsL7nt-tjqRU
   - name: Panda-US-03
-    type: vmess
-    server: c21s3.portablesubmarines.com
-    port: 10725
-    uuid: c69c7794-3b79-445f-9beb-e764031fb166
-    alterId: 0
-    cipher: chacha20-poly1305
-    tls: false
-    skip-cert-verify: true
+    type: ss
+    server: x912z14g.j1.surgeway.xyz
+    port: 1234
+    cipher: chacha20-ietf-poly1305
+    password: 84hn-BGnDZrHccZm0ud-BsL7nt-tjqRU
   - name: Panda-JP-01
-    type: vmess
-    server: c21s4.portablesubmarines.com
-    port: 10725
-    uuid: c69c7794-3b79-445f-9beb-e764031fb166
-    alterId: 0
-    cipher: chacha20-poly1305
-    tls: false
-    skip-cert-verify: true
+    type: ss
+    server: x912z14g.h1.surgeway.xyz
+    port: 1234
+    cipher: chacha20-ietf-poly1305
+    password: 2caNF8wMK4Ya7_thWbYPgnNcnqfCNH6o
   - name: Panda-NL-01
+    type: ss
+    server: x912z14g.j1.surgeway.xyz
+    port: 1234
+    cipher: chacha20-ietf-poly1305
+    password: 2caNF8wMK4Ya7_thWbYPgnNcnqfCNH6o
+  - name: Panda-US-04
     type: vmess
-    server: c21s5.portablesubmarines.com
+    server: c21s801.portablesubmarines.com
     port: 10725
     uuid: c69c7794-3b79-445f-9beb-e764031fb166
     alterId: 0
@@ -120,6 +104,7 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
+      - Panda-US-04
   - name: TikTok
     type: select
     proxies:
@@ -129,6 +114,7 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
+      - Panda-US-04
   - name: Auto-Test
     type: url-test
     url: http://www.gstatic.cn/generate_204
@@ -145,6 +131,7 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
+      - Panda-US-04
   - name: Auto-TikTok
     type: url-test
     url: http://www.gstatic.cn/generate_204
@@ -156,6 +143,7 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
+      - Panda-US-04
   - name: Auto-Fallback
     type: fallback
     url: http://www.gstatic.cn/generate_204
@@ -172,6 +160,7 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
+      - Panda-US-04
 rules:
   - DOMAIN-SUFFIX,services.googleapis.cn,Proxy
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Proxy
