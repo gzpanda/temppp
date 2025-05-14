@@ -4,20 +4,27 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 dns:
-  enable: false # set true to enable dns (default is false)
-  listen: 127.0.0.1:7053
-  nameserver:
+  enable: false
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
     - 119.29.29.29
-    - 114.114.114.114
-  fallback: # concurrent request with nameserver, fallback used when GEOIP country isn't CN
-    - https://1.1.1.1/dns-query
-    - tls://1.0.0.1:853
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver:
     - https://doh.pub/dns-query
-  proxy-server-nameserver:
-    - https://doh.pub/dns-query
-    - tls://8.8.4.4
-  direct-nameserver:
-    - system
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - https://doh.dns.sb/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 proxies:
   - name: Panda-HK-01
     type: ss
@@ -80,15 +87,6 @@ proxies:
     port: 1234
     cipher: chacha20-ietf-poly1305
     password: 2caNF8wMK4Ya7_thWbYPgnNcnqfCNH6o
-  - name: Panda-US-04
-    type: vmess
-    server: c21s801.portablesubmarines.com
-    port: 10725
-    uuid: c69c7794-3b79-445f-9beb-e764031fb166
-    alterId: 0
-    cipher: chacha20-poly1305
-    tls: false
-    skip-cert-verify: true
 proxy-groups:
   - name: Proxy
     type: select
@@ -104,7 +102,6 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
-      - Panda-US-04
   - name: TikTok
     type: select
     proxies:
@@ -114,7 +111,6 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
-      - Panda-US-04
   - name: Auto-Test
     type: url-test
     url: http://www.gstatic.cn/generate_204
@@ -131,7 +127,6 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
-      - Panda-US-04
   - name: Auto-TikTok
     type: url-test
     url: http://www.gstatic.cn/generate_204
@@ -143,7 +138,6 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
-      - Panda-US-04
   - name: Auto-Fallback
     type: fallback
     url: http://www.gstatic.cn/generate_204
@@ -160,7 +154,6 @@ proxy-groups:
       - Panda-US-03
       - Panda-JP-01
       - Panda-NL-01
-      - Panda-US-04
 rules:
   - DOMAIN-SUFFIX,services.googleapis.cn,Proxy
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Proxy
