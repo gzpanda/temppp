@@ -404,13 +404,8 @@ proxy-groups:
         ],
     }
 
-  - name: TikTok
-    type: select
-    proxies:
-      - Auto-TikTok
-      - JP
-      - SG
-      - US
+  - { name: TikTok, type: select, proxies: [Auto-TikTok, JP, SG, US] }
+
   - {
       name: Auto,
       type: url-test,
@@ -456,15 +451,15 @@ proxy-groups:
       url: 'http://www.gstatic.com/generate_204',
       interval: 86400,
     }
-  - name: Auto-TikTok
-    type: url-test
-    url: http://www.gstatic.cn/generate_204
-    interval: 300
-    tolerance: 100
-    proxies:
-      - JP
-      - SG
-      - US
+
+  - {
+      name: Auto-TikTok,
+      type: url-test,
+      url: 'http://www.gstatic.com/generate_204',
+      interval: 300,
+      tolerance: 100,
+      proxies: [JP, SG, US],
+    }
 
   - {
       name: Failover,
@@ -512,26 +507,33 @@ proxy-groups:
       interval: 7200,
     }
 
-  - name: JP
-    type: url-test
-    url: http://www.gstatic.cn/generate_204
-    include-all: true
-    exclude-type: direct
-    filter: '(?i)日|JP|jp|japan'
+  - {
+      name: JP,
+      type: url-test,
+      url: 'http://www.gstatic.com/generate_204',
+      include-all: true,
+      exclude-type: direct,
+      filter: '(?i)日|JP|jp|japan',
+    }
 
-  - name: SG
-    type: url-test
-    url: http://www.gstatic.cn/generate_204
-    include-all: true
-    exclude-type: direct
-    filter: '(?i)新|SG|sg|singapore'
+  - {
+      name: SG,
+      type: url-test,
+      url: 'http://www.gstatic.com/generate_204',
+      include-all: true,
+      exclude-type: direct,
+      filter: '(?i)新|SG|sg|singapore',
+    }
 
-  - name: US
-    type: url-test
-    url: http://www.gstatic.cn/generate_204
-    include-all: true
-    exclude-type: direct
-    filter: '(?i)美|US|us|united states'
+  - {
+      name: US,
+      type: url-test,
+      url: 'http://www.gstatic.com/generate_204',
+      include-all: true,
+      exclude-type: direct,
+      filter: '(?i)美|US|us|united states',
+    }
+
 rules:
   - 'IP-CIDR,172.67.197.176/32,DIRECT,no-resolve'
   - 'IP-CIDR,69.16.230.165/32,DIRECT,no-resolve'
