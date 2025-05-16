@@ -364,8 +364,8 @@ proxy-groups:
       type: select,
       proxies:
         [
-          自动选择,
-          故障转移,
+          Auto,
+          Failover,
           Happy-HK01,
           Happy-HK02,
           Happy-HK03,
@@ -403,8 +403,16 @@ proxy-groups:
           'Happy-FO04',
         ],
     }
+
+  - name: TikTok
+    type: select
+    proxies:
+      - Auto-TikTok
+      - JP
+      - SG
+      - US
   - {
-      name: 自动选择,
+      name: Auto,
       type: url-test,
       proxies:
         [
@@ -448,8 +456,18 @@ proxy-groups:
       url: 'http://www.gstatic.com/generate_204',
       interval: 86400,
     }
+  - name: Auto-TikTok
+    type: url-test
+    url: http://www.gstatic.cn/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - JP
+      - SG
+      - US
+
   - {
-      name: 故障转移,
+      name: Failover,
       type: fallback,
       proxies:
         [
@@ -493,6 +511,27 @@ proxy-groups:
       url: 'http://www.gstatic.com/generate_204',
       interval: 7200,
     }
+
+  - name: JP
+    type: url-test
+    url: http://www.gstatic.cn/generate_204
+    include-all: true
+    exclude-type: direct
+    filter: '(?i)日|JP|jp|japan'
+
+  - name: SG
+    type: url-test
+    url: http://www.gstatic.cn/generate_204
+    include-all: true
+    exclude-type: direct
+    filter: '(?i)新|SG|sg|singapore'
+
+  - name: US
+    type: url-test
+    url: http://www.gstatic.cn/generate_204
+    include-all: true
+    exclude-type: direct
+    filter: '(?i)美|US|us|united states'
 rules:
   - 'IP-CIDR,172.67.197.176/32,DIRECT,no-resolve'
   - 'IP-CIDR,69.16.230.165/32,DIRECT,no-resolve'
@@ -667,6 +706,11 @@ rules:
   - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
   - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
   - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
+  - DOMAIN-SUFFIX,tik-tokapi.com,TikTok
+  - DOMAIN-SUFFIX,tiktokcdn.com,TikTok
+  - DOMAIN-SUFFIX,tiktok.com,TikTok
+  - DOMAIN-SUFFIX,tiktokv.com,TikTok
+  - DOMAIN-SUFFIX,full:p16-tiktokcdn-com.akamaized.net,TikTok
   - 'DOMAIN-KEYWORD,amazon,Proxy'
   - 'DOMAIN-KEYWORD,google,Proxy'
   - 'DOMAIN-KEYWORD,gmail,Proxy'
