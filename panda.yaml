@@ -30,19 +30,19 @@ proxies:
   - name: Panda-HK-01
     type: ss
     server: c90s1.portablesubmarines.com
-    port: 21599
+    port: 31255
     cipher: aes-256-gcm
     password: C62DTEoJtk325UWC
   - name: Panda-HK-02
     type: ss
     server: c90s2.portablesubmarines.com
-    port: 21599
+    port: 31255
     cipher: aes-256-gcm
     password: C62DTEoJtk325UWC
   - name: Panda-HK-03
     type: vmess
     server: c90s3.portablesubmarines.com
-    port: 21599
+    port: 31255
     uuid: d5fd545c-ab1f-4864-92dd-e34cbf465e5b
     alterId: 0
     cipher: chacha20-poly1305
@@ -51,7 +51,7 @@ proxies:
   - name: Panda-HK-04
     type: vmess
     server: c90s4.portablesubmarines.com
-    port: 21599
+    port: 31255
     uuid: d5fd545c-ab1f-4864-92dd-e34cbf465e5b
     alterId: 0
     cipher: chacha20-poly1305
@@ -60,7 +60,7 @@ proxies:
   - name: Panda-HK-05
     type: vmess
     server: c90s5.portablesubmarines.com
-    port: 21599
+    port: 31255
     uuid: d5fd545c-ab1f-4864-92dd-e34cbf465e5b
     alterId: 0
     cipher: chacha20-poly1305
@@ -71,35 +71,35 @@ proxies:
     server: hzhz1.sssyun.xyz
     port: 39505
     cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:OTJkM2IxMDYtNWRmYy00MA==
+    password: MDhhMTdjZDI0MjI2ZWRlNg==:M2M2YmQxMjQtYjdmZi00MA==
     udp: true
   - name: Panda-US-02
     type: ss
     server: hzhz2.sssyun.xyz
     port: 44014
     cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:OTJkM2IxMDYtNWRmYy00MA==
+    password: MDhhMTdjZDI0MjI2ZWRlNg==:M2M2YmQxMjQtYjdmZi00MA==
     udp: true
   - name: Panda-US-03
     type: ss
     server: hzhz1.sssyun.xyz
     port: 39203
     cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:OTJkM2IxMDYtNWRmYy00MA==
+    password: MDhhMTdjZDI0MjI2ZWRlNg==:M2M2YmQxMjQtYjdmZi00MA==
     udp: true
   - name: Panda-JP-01
     type: ss
     server: hzhz1.sssyun.xyz
     port: 19529
     cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:OTJkM2IxMDYtNWRmYy00MA==
+    password: MDhhMTdjZDI0MjI2ZWRlNg==:M2M2YmQxMjQtYjdmZi00MA==
     udp: true
   - name: Panda-NL-01
     type: ss
     server: hzhz2.sssyun.xyz
     port: 40019
     cipher: 2022-blake3-aes-128-gcm
-    password: MDhhMTdjZDI0MjI2ZWRlNg==:OTJkM2IxMDYtNWRmYy00MA==
+    password: MDhhMTdjZDI0MjI2ZWRlNg==:M2M2YmQxMjQtYjdmZi00MA==
     udp: true
 proxy-groups:
   - name: Proxy
